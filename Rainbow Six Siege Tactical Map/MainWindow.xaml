@@ -1,0 +1,18 @@
+﻿<Window x:Class="R6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="none"
+        Title="MainWindow" Height="1080" Width="1920" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+    <Grid Width="Auto" Height="Auto">
+        <Grid.Background>
+            <ImageBrush ImageSource="background-image.jpg"/>
+        </Grid.Background>
+        <Image x:Name="Map_Button" HorizontalAlignment="Center" Height="178" Margin="727,464,772,430" VerticalAlignment="Center" Width="413" Source="MapButton.jpg" MouseLeftButtonDown="Map_Button_MouseLeftButtonDown"/>
+        <Button Content="X" HorizontalAlignment="Left" Height="100" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100" Click="Button_Click"/>
+    </Grid>
+</Window>
