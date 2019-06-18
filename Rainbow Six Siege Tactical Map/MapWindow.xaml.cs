@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,18 +19,25 @@ namespace R6
     /// </summary>
     public partial class MapWindow : Window
     {
+        /// <summary>
+        /// Okno Map
+        /// </summary>
         public MapWindow()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Kliknięcie przycisku
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new MainWindow();
             mw.ShowDialog();
             this.Close();
         }
-
+        /// <summary>
+        /// Przejście do mapy
+        /// </summary>
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             BorderWindow bw = new BorderWindow();
