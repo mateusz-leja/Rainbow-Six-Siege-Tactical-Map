@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,10 +24,17 @@ namespace R6
     /// </summary>
     public partial class BorderWindow : Window
     {
+        /// <summary>
+        /// Zmienna globalna P
+        /// </summary>
         public int P { get; set; }
-
+        /// <summary>
+        /// Typ logiczny Use
+        /// </summary>
         public bool Use { get; set; }
-
+        /// <summary>
+        /// Strona Startowa
+        /// </summary>
         public BorderWindow()
         {
             InitializeComponent();
@@ -55,9 +62,13 @@ namespace R6
             Paintings[P].EditingMode = InkCanvasEditingMode.None;
             Paintings[P].EditingMode = previousEditingMode;
         }
-
+        /// <summary>
+        /// Globalna zmienna
+        /// </summary>
         private int ColorMode { get; set; }
-
+        /// <summary>
+        /// Ustawia Kolor
+        /// </summary>
         private void setColorMode()
         {
             PropertyInfo[] colors = BrushColorCombo.ItemsSource.Cast<PropertyInfo>().ToArray();
@@ -67,10 +78,13 @@ namespace R6
                     BrushColorCombo.SelectedIndex = i;
             }
         }
-
-        //Tablica tablic do rysowania
+        /// <summary>
+        /// Tablica tablic do rysowania
+        /// </summary>
         private InkCanvas[] Paintings = new InkCanvas[4];
-
+        /// <summary>
+        /// Wszystkie rzeczy które mają się wykonać
+        /// </summary>
         private void Start()
         {
             P = 1;
@@ -89,12 +103,25 @@ namespace R6
             WallList();
             FloorsHidding(69);
         }
-
+        /// <summary>
+        /// Stałą zmienna która przechowuje liczbe bool w tablicy
+        /// </summary>
         const int wf1 = 70;
+        /// <summary>
+        /// Typ Logiczny piętra 1
+        /// </summary>
         private bool[] Floor1 = new bool[wf1];
+        /// <summary>
+        /// Typ logiczny piętra 2
+        /// </summary>
         private bool[] Floor2 = new bool[35];
+        /// <summary>
+        /// Tablica ścian
+        /// </summary>
         private Grid[] WallsFloor = new Grid[wf1];
-
+        /// <summary>
+        /// Ukrywa wszystkie ściany w trakcie startu
+        /// </summary>
         private void Hidding(int i)
         {
             if (WallsFloor[i].Opacity == 100)
@@ -108,7 +135,9 @@ namespace R6
                 Floor1[i] = false;
             }
         }
-
+        /// <summary>
+        /// Lista ścian
+        /// </summary>
         private void WallList()
         {
             WallsFloor[1] = Wall1;
@@ -181,13 +210,17 @@ namespace R6
             WallsFloor[68] = Wall68;
             WallsFloor[69] = Wall69;
         }
-
+        /// <summary>
+        /// Ukrywa podłogę
+        /// </summary>
         private void FloorsHidding(int x)
         {
             for (int i = 1; i <= x; i++)
                 WallsFloor[i].Opacity = 0;
         }
-
+        /// <summary>
+        /// Przycisk 1 piętra
+        /// </summary>
         private void Button_Floor1_Click(object sender, RoutedEventArgs e)
         {
             P = 1;
@@ -203,7 +236,9 @@ namespace R6
             setSizeMode();
             setColorMode();
         }
-
+        /// <summary>
+        /// Przycisk 2 piętra
+        /// </summary>
         private void Button_Floor2_Click(object sender, RoutedEventArgs e)
         {
             P = 2;
@@ -219,7 +254,9 @@ namespace R6
             setSizeMode();
             setColorMode();
         }
-
+        /// <summary>
+        /// Przycisk 3 piętra
+        /// </summary>
         private void Button_Floor3_Click(object sender, RoutedEventArgs e)
         {
             P = 3;
@@ -235,7 +272,9 @@ namespace R6
             setSizeMode();
             setColorMode();
         }
-
+        /// <summary>
+        /// Ukrywa rysunek lub pokazuje
+        /// </summary>
         private void ReinforceMode(object sender, RoutedEventArgs e)
         {
             Paintings[1].Visibility = (Paintings[1].Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
@@ -243,10 +282,13 @@ namespace R6
             Paintings[3].Visibility = (Paintings[3].Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
         }
 
-        //Paint
-
+        /// <summary>
+        /// Paint
+        /// </summary>
         private double SizeMode { get; set; }
-
+        /// <summary>
+        /// Ustawia painta
+        /// </summary>
         private void setSizeMode()
         {
             var drawingAttributes = Paintings[P].DefaultDrawingAttributes;
@@ -260,7 +302,9 @@ namespace R6
             Paintings[P].EditingMode = InkCanvasEditingMode.None;
             Paintings[P].EditingMode = previousEditingMode;
         }
-
+        /// <summary>
+        /// Przesuwak do rozmiaru pędzla
+        /// </summary>
         private void BrushSizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (Paintings[P] == null) return;
@@ -277,15 +321,21 @@ namespace R6
             Paintings[P].EditingMode = InkCanvasEditingMode.None;
             Paintings[P].EditingMode = previousEditingMode;
         }
-
+        /// <summary>
+        /// Kolory pędzla
+        /// </summary>
         private void BrushColorCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Color selectedColor = (Color)(BrushColorCombo.SelectedItem as PropertyInfo).GetValue(null, null);
             Paintings[P].DefaultDrawingAttributes.Color = selectedColor;
         }
-
+        /// <summary>
+        /// Pędzel
+        /// </summary>
         private int BrushMode { get; set; }
-
+        /// <summary>
+        /// Ustawienie pędzla
+        /// </summary>
         private void setBrushMode()
         {
             switch (BrushMode)
@@ -304,7 +354,9 @@ namespace R6
                     break;
             }
         }
-
+        /// <summary>
+        /// Zmienia pędzle
+        /// </summary>
         private void BrushStateCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Paintings[P] == null) return;
@@ -332,9 +384,13 @@ namespace R6
                 }
 
         }
-
+        /// <summary>
+        /// Kształty pędzla
+        /// </summary>
         private int ShapeMode { get; set; }
-
+        /// <summary>
+        /// Ustawianie kształtów pędzla
+        /// </summary>
         private void setShapeMode()
         {
             switch (ShapeMode)
@@ -349,7 +405,9 @@ namespace R6
                     break;
             }
         }
-
+        /// <summary>
+        /// Kształty pędzla
+        /// </summary>
         private void BrushShapesCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Paintings[P] == null) return;
@@ -368,7 +426,9 @@ namespace R6
                     break;
             }
         }
-
+        /// <summary>
+        /// Zamknięcie
+        /// </summary>
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             MapWindow mw = new MapWindow();
@@ -376,7 +436,9 @@ namespace R6
             this.Close();
             this.Close();
         }
-
+        /// <summary>
+        /// Czynności ścian
+        /// </summary>
         private void Wall1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Hidding(1);
@@ -716,7 +778,9 @@ namespace R6
         {
             Hidding(68);
         }
-
+        /// <summary>
+        /// Koniec czynności ścian
+        /// </summary>
         private void Wall69_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Hidding(69);
