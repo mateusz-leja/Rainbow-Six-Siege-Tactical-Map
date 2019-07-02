@@ -1,0 +1,805 @@
+\hypertarget{class_r6_1_1_border_window}{}\section{R6.\+Border\+Window Class Reference}
+\label{class_r6_1_1_border_window}\index{R6.BorderWindow@{R6.BorderWindow}}
+
+
+Logika interakcji dla klasy Border\+Window.\+xaml  
+
+
+Inheritance diagram for R6.\+Border\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r6_1_1_border_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r6_1_1_border_window_a2fbd146cdcb26ba0d1797a2b60f36df4}{Border\+Window}} ()
+\begin{DoxyCompactList}\small\item\em przechowuje zmieną logiczną Use \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r6_1_1_border_window_a67c1b3f2b97016169c2c6f44944886e3}{P}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zmienna globalna P \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r6_1_1_border_window_a9b7f2a1fddfc5036c4f02413ad76533d}{Use}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Typ logiczny Use \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r6_1_1_border_window_affd1225ea88517c68b765f71cbf5f58c}{Color\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Globalna zmienna Color\+Mode \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_r6_1_1_border_window_a4f1a4e5f68aa130734eda8cc1cd58610}{Size\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Paint \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r6_1_1_border_window_abf05a9cb8322f14a0f769d90232223ff}{Brush\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pędzel \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r6_1_1_border_window_a975d53917e4349a57833760f5b06aca1}{Shape\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Kształty pędzla \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a8b03994a86c5669bb1cd8f8b1e7f4cfc}{set\+Color\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em ustawia kolor pędzla dla innych Paintings \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a877d358b0f63cb293a1ea410865d83b5}{Start}} ()
+\begin{DoxyCompactList}\small\item\em czynności potrzebne do wystartowania okna \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a1591a1aa79f9d222f796e1016a5fa896}{Hidding}} (int i)
+\begin{DoxyCompactList}\small\item\em Ukrywa wszystkie ściany w trakcie startu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a9c3e58b6cbed9a315c21c96b90ba1afc}{Wall\+List}} ()
+\begin{DoxyCompactList}\small\item\em Lista ścian \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a359413bf0662feeeb3caa09a7226a139}{Floors\+Hidding}} (int x)
+\begin{DoxyCompactList}\small\item\em Ukrywa podłogę \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a3b311ca9574273854d443a4db07b3af3}{Button\+\_\+\+Floor1\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Przycisk 1 piętra \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a6f3bb94485f373bb58049c1d7af5d13d}{Button\+\_\+\+Floor2\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Przycisk 2 piętra \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a0a3bf7cdcdd8accd8390e38c2f78c48a}{Button\+\_\+\+Floor3\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Przycisk 3 piętra \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_aac448e44d41bd2ff00169c352fc54e97}{Reinforce\+Mode}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Ukrywa lub pokazuje tablicę do rysowania \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_af993f71d154c141cd4b686ca4e85a1d6}{set\+Size\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em zmienna zapisująca wielkość pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_ac61bc05781f6a6d8b6167e102c43f730}{Brush\+Size\+Slider\+\_\+\+Value\+Changed}} (object sender, Routed\+Property\+Changed\+Event\+Args$<$ double $>$ e)
+\begin{DoxyCompactList}\small\item\em Przesuwak do rozmiaru pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a5ba4a89ba8ece37221809d0729f106d7}{Brush\+Color\+Combo\+\_\+\+Selection\+Changed}} (object sender, Selection\+Changed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Kolory pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_af513ea7da32c4569d81ff3bd1ac57ec7}{set\+Brush\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Ustawienie pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_ac90a822259767b24cb4510075be87c59}{Brush\+State\+Combo\+\_\+\+Selection\+Changed}} (object sender, Selection\+Changed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Zmienia pędzle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_aa08320545cc38a532d0aad8ed405089d}{set\+Shape\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Ustawianie kształt pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a9124fe60aaacd20c7c0d1ace0555a28b}{Brush\+Shapes\+Combo\+\_\+\+Selection\+Changed}} (object sender, Selection\+Changed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Kształty pędzla \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a553e12d8cc547080bdf44c3c8972025a}{Close\+\_\+\+Click}} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Zamknięcie okna \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r6_1_1_border_window_a0fe611ab2eca4d594bd706026a7f48c2}{Wall1\+\_\+\+Mouse\+Left\+Button\+Down}} (object sender, Mouse\+Button\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Czynności ścian \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a53fd2e490e7ac2b9ed194b9083f0ad30}\label{class_r6_1_1_border_window_a53fd2e490e7ac2b9ed194b9083f0ad30}} 
+void {\bfseries Wall2\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae4d85053d64790dcced46c500993dc35}\label{class_r6_1_1_border_window_ae4d85053d64790dcced46c500993dc35}} 
+void {\bfseries Wall3\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae63050a88123f5572158813dddc7a705}\label{class_r6_1_1_border_window_ae63050a88123f5572158813dddc7a705}} 
+void {\bfseries Wall4\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_abe7ff56728e1736cada6bdf273525eca}\label{class_r6_1_1_border_window_abe7ff56728e1736cada6bdf273525eca}} 
+void {\bfseries Wall5\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a4cbe5251c32c6e51f835a4925a5249e1}\label{class_r6_1_1_border_window_a4cbe5251c32c6e51f835a4925a5249e1}} 
+void {\bfseries Wall6\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a60b5d38218f3c54cb27ec7c904b99a84}\label{class_r6_1_1_border_window_a60b5d38218f3c54cb27ec7c904b99a84}} 
+void {\bfseries Wall7\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ac6d21a24a3248fce92c857e89a1053a9}\label{class_r6_1_1_border_window_ac6d21a24a3248fce92c857e89a1053a9}} 
+void {\bfseries Wall8\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_abdf34d3d0ae56d71b8cf3bc06259eee1}\label{class_r6_1_1_border_window_abdf34d3d0ae56d71b8cf3bc06259eee1}} 
+void {\bfseries Wall9\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a6a4322f45b82c8bab47a510692ddb0a3}\label{class_r6_1_1_border_window_a6a4322f45b82c8bab47a510692ddb0a3}} 
+void {\bfseries Wall10\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ad53bff4e72cfc0434c3ae3df455c8248}\label{class_r6_1_1_border_window_ad53bff4e72cfc0434c3ae3df455c8248}} 
+void {\bfseries Wall11\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_af1c4d31ab8d189891d3267bcf288033d}\label{class_r6_1_1_border_window_af1c4d31ab8d189891d3267bcf288033d}} 
+void {\bfseries Wall12\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a83ae9379c050721344d6d15411362c58}\label{class_r6_1_1_border_window_a83ae9379c050721344d6d15411362c58}} 
+void {\bfseries Wall13\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae30d080eae97e9d2f19bec5a9f194f8a}\label{class_r6_1_1_border_window_ae30d080eae97e9d2f19bec5a9f194f8a}} 
+void {\bfseries Wall14\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aacac724372380a72be1fccc26477d50d}\label{class_r6_1_1_border_window_aacac724372380a72be1fccc26477d50d}} 
+void {\bfseries Wall15\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ac829a0992d89fdc95e7462200ebae3b6}\label{class_r6_1_1_border_window_ac829a0992d89fdc95e7462200ebae3b6}} 
+void {\bfseries Wall16\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a3df9b0a28842c5ad7c4b622f40409d52}\label{class_r6_1_1_border_window_a3df9b0a28842c5ad7c4b622f40409d52}} 
+void {\bfseries Wall17\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a491096047b93a6656c17e256b54dac84}\label{class_r6_1_1_border_window_a491096047b93a6656c17e256b54dac84}} 
+void {\bfseries Wall18\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a7fb26208661af9aeadea4eddbd9e1604}\label{class_r6_1_1_border_window_a7fb26208661af9aeadea4eddbd9e1604}} 
+void {\bfseries Wall19\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a8eb60eab43a57995f13a1f2ae627cb71}\label{class_r6_1_1_border_window_a8eb60eab43a57995f13a1f2ae627cb71}} 
+void {\bfseries Wall20\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a0db109da2b1d6871db3df52a1c496dbf}\label{class_r6_1_1_border_window_a0db109da2b1d6871db3df52a1c496dbf}} 
+void {\bfseries Wall21\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a70b13a417e899d2c9c293260c1203da0}\label{class_r6_1_1_border_window_a70b13a417e899d2c9c293260c1203da0}} 
+void {\bfseries Wall22\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a4269204dea868f59c0b10412949aa6ca}\label{class_r6_1_1_border_window_a4269204dea868f59c0b10412949aa6ca}} 
+void {\bfseries Wall23\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_abfc384a45b5d2c5e2760fd3dee7ca958}\label{class_r6_1_1_border_window_abfc384a45b5d2c5e2760fd3dee7ca958}} 
+void {\bfseries Wall24\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae9e52a1ea8c9c73cde18fa8bdd54b1d1}\label{class_r6_1_1_border_window_ae9e52a1ea8c9c73cde18fa8bdd54b1d1}} 
+void {\bfseries Wall25\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a9de4502b5e12fb078673df3354080132}\label{class_r6_1_1_border_window_a9de4502b5e12fb078673df3354080132}} 
+void {\bfseries Wall26\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae2d6039e4c0b63acc4de88b29d19818f}\label{class_r6_1_1_border_window_ae2d6039e4c0b63acc4de88b29d19818f}} 
+void {\bfseries Wall27\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a166b99481545f1e6e4b5cffb8d036928}\label{class_r6_1_1_border_window_a166b99481545f1e6e4b5cffb8d036928}} 
+void {\bfseries Wall28\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a1b603231385de8b493a797f474a0b4f3}\label{class_r6_1_1_border_window_a1b603231385de8b493a797f474a0b4f3}} 
+void {\bfseries Wall29\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a82278ad382b26c4dbf607b83939f0b91}\label{class_r6_1_1_border_window_a82278ad382b26c4dbf607b83939f0b91}} 
+void {\bfseries Wall30\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ad734be8e0986343151e192fd9b7f2b63}\label{class_r6_1_1_border_window_ad734be8e0986343151e192fd9b7f2b63}} 
+void {\bfseries Wall31\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a5ca94addd01591b7e99fb9b4d24b7804}\label{class_r6_1_1_border_window_a5ca94addd01591b7e99fb9b4d24b7804}} 
+void {\bfseries Wall32\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a4adbb06a29b8474193bd6dec5711ed68}\label{class_r6_1_1_border_window_a4adbb06a29b8474193bd6dec5711ed68}} 
+void {\bfseries Wall33\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a4ccbc73c833b72c0bcf0b733811bb83d}\label{class_r6_1_1_border_window_a4ccbc73c833b72c0bcf0b733811bb83d}} 
+void {\bfseries Wall34\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_afcdf4a0b6f0c333a8c9661aabc49d21c}\label{class_r6_1_1_border_window_afcdf4a0b6f0c333a8c9661aabc49d21c}} 
+void {\bfseries Wall35\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a9eac2dfc8431b8b58e74d5537e75d3d4}\label{class_r6_1_1_border_window_a9eac2dfc8431b8b58e74d5537e75d3d4}} 
+void {\bfseries Wall36\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a2624a0df0a61ae0ae83c6d66ed23ccf3}\label{class_r6_1_1_border_window_a2624a0df0a61ae0ae83c6d66ed23ccf3}} 
+void {\bfseries Wall37\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a8de62120df4a3c40e1a64ce43d6bea56}\label{class_r6_1_1_border_window_a8de62120df4a3c40e1a64ce43d6bea56}} 
+void {\bfseries Wall38\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_afd39e068bf527dc6d4417bdeb15de8a7}\label{class_r6_1_1_border_window_afd39e068bf527dc6d4417bdeb15de8a7}} 
+void {\bfseries Wall39\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ac79854859480360cc4808b656b512f88}\label{class_r6_1_1_border_window_ac79854859480360cc4808b656b512f88}} 
+void {\bfseries Wall40\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a3337fdca13ce321c7604407ea7266689}\label{class_r6_1_1_border_window_a3337fdca13ce321c7604407ea7266689}} 
+void {\bfseries Wall41\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a5fcf682883371d32fea51dfeb9698c07}\label{class_r6_1_1_border_window_a5fcf682883371d32fea51dfeb9698c07}} 
+void {\bfseries Wall42\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_acfe1ea7d90c46e988b5c667e2660ec3b}\label{class_r6_1_1_border_window_acfe1ea7d90c46e988b5c667e2660ec3b}} 
+void {\bfseries Wall43\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a068a45a6c5f20e3a6b2b6ac0294d0ed0}\label{class_r6_1_1_border_window_a068a45a6c5f20e3a6b2b6ac0294d0ed0}} 
+void {\bfseries Wall44\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a1ed122c4c9e3d3e4a220ae79c04ec640}\label{class_r6_1_1_border_window_a1ed122c4c9e3d3e4a220ae79c04ec640}} 
+void {\bfseries Wall45\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a97239097b90285ac25e6d8ea65e32f92}\label{class_r6_1_1_border_window_a97239097b90285ac25e6d8ea65e32f92}} 
+void {\bfseries Wall46\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a95dc491696fd24263587ce3449399588}\label{class_r6_1_1_border_window_a95dc491696fd24263587ce3449399588}} 
+void {\bfseries Wall47\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ab17b9624862ccb5c55b4dc0bafe157aa}\label{class_r6_1_1_border_window_ab17b9624862ccb5c55b4dc0bafe157aa}} 
+void {\bfseries Wall48\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ac89ec90830f2d829de42865d7b82c318}\label{class_r6_1_1_border_window_ac89ec90830f2d829de42865d7b82c318}} 
+void {\bfseries Wall49\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ab423c10e2c6b35bb0ff2f06a0884881c}\label{class_r6_1_1_border_window_ab423c10e2c6b35bb0ff2f06a0884881c}} 
+void {\bfseries Wall50\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aeb530edbe49726551fd82d4e42c96f26}\label{class_r6_1_1_border_window_aeb530edbe49726551fd82d4e42c96f26}} 
+void {\bfseries Wall51\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae41b4459bed265f4758d391dafa45b31}\label{class_r6_1_1_border_window_ae41b4459bed265f4758d391dafa45b31}} 
+void {\bfseries Wall52\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_afc5244aab0b6d989d3ecee7f89092e54}\label{class_r6_1_1_border_window_afc5244aab0b6d989d3ecee7f89092e54}} 
+void {\bfseries Wall53\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a36404fa0e2cede070ac95c0d42104041}\label{class_r6_1_1_border_window_a36404fa0e2cede070ac95c0d42104041}} 
+void {\bfseries Wall54\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae9c2cd38cdbf4fddb9a15e426c2ab767}\label{class_r6_1_1_border_window_ae9c2cd38cdbf4fddb9a15e426c2ab767}} 
+void {\bfseries Wall55\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_abe7ee3a7fe62beca86c69212ca5ac066}\label{class_r6_1_1_border_window_abe7ee3a7fe62beca86c69212ca5ac066}} 
+void {\bfseries Wall56\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a58df3ea6dd3e281d89db94c63e1407f7}\label{class_r6_1_1_border_window_a58df3ea6dd3e281d89db94c63e1407f7}} 
+void {\bfseries Wall57\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aed016c9144f98dd89bf960a3e911513c}\label{class_r6_1_1_border_window_aed016c9144f98dd89bf960a3e911513c}} 
+void {\bfseries Wall58\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a6af64c7934294fe2efb6427c826c994f}\label{class_r6_1_1_border_window_a6af64c7934294fe2efb6427c826c994f}} 
+void {\bfseries Wall59\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_adb2aa61d6d7d4de5969037255551a55d}\label{class_r6_1_1_border_window_adb2aa61d6d7d4de5969037255551a55d}} 
+void {\bfseries Wall60\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aa22d1ccac1233006dac9f7321a9345da}\label{class_r6_1_1_border_window_aa22d1ccac1233006dac9f7321a9345da}} 
+void {\bfseries Wall61\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aa29ce86c5f723944300b4419e6ddff87}\label{class_r6_1_1_border_window_aa29ce86c5f723944300b4419e6ddff87}} 
+void {\bfseries Wall62\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aae9b30ab8f08d520d455cc404bdac651}\label{class_r6_1_1_border_window_aae9b30ab8f08d520d455cc404bdac651}} 
+void {\bfseries Wall63\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a78f2b28f67c5bc3ad508576b145d9323}\label{class_r6_1_1_border_window_a78f2b28f67c5bc3ad508576b145d9323}} 
+void {\bfseries Wall64\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_aed38c9533c7ba7f3363c079b9644a69e}\label{class_r6_1_1_border_window_aed38c9533c7ba7f3363c079b9644a69e}} 
+void {\bfseries Wall65\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a85122ca0728c6c9326ddbbb3b994408f}\label{class_r6_1_1_border_window_a85122ca0728c6c9326ddbbb3b994408f}} 
+void {\bfseries Wall66\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a04fea896e193e90336243a572dc66879}\label{class_r6_1_1_border_window_a04fea896e193e90336243a572dc66879}} 
+void {\bfseries Wall67\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_a33b850a359700703905ea7a698873f14}\label{class_r6_1_1_border_window_a33b850a359700703905ea7a698873f14}} 
+void {\bfseries Wall68\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\item 
+\mbox{\Hypertarget{class_r6_1_1_border_window_ae83d0e2e6edf54c65b1197f6272d0c1c}\label{class_r6_1_1_border_window_ae83d0e2e6edf54c65b1197f6272d0c1c}} 
+void {\bfseries Wall69\+\_\+\+Mouse\+Left\+Button\+Down} (object sender, Mouse\+Button\+Event\+Args e)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ink\+Canvas \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r6_1_1_border_window_aed1eaf9832ca05835a3a3375fcfd46c0}{Paintings}} = new Ink\+Canvas\mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica tablic do rysowania \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}{wf1}} = 70
+\begin{DoxyCompactList}\small\item\em Stała zmienna która przechowuje liczbe bool w tablicy \end{DoxyCompactList}\item 
+bool \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r6_1_1_border_window_a3d4d51e8a9d4bba1d66d152127718b55}{Floor1}} = new bool\mbox{[}\mbox{\hyperlink{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}{wf1}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Typ Logiczny piętra 1 \end{DoxyCompactList}\item 
+bool \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r6_1_1_border_window_a08f590f0e50727c447b137e55454e9d8}{Floor2}} = new bool\mbox{[}35\mbox{]}
+\begin{DoxyCompactList}\small\item\em Typ logiczny piętra 2 \end{DoxyCompactList}\item 
+Grid \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r6_1_1_border_window_ab935e3b07814c16d3bda8739d094242b}{Walls\+Floor}} = new Grid\mbox{[}\mbox{\hyperlink{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}{wf1}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica ścian \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Logika interakcji dla klasy Border\+Window.\+xaml 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a2fbd146cdcb26ba0d1797a2b60f36df4}\label{class_r6_1_1_border_window_a2fbd146cdcb26ba0d1797a2b60f36df4}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BorderWindow@{BorderWindow}}
+\index{BorderWindow@{BorderWindow}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BorderWindow()}{BorderWindow()}}
+{\footnotesize\ttfamily R6.\+Border\+Window.\+Border\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+przechowuje zmieną logiczną Use 
+
+Strona Startowa 
+
+konstruktor obiektu okna \mbox{\hyperlink{class_r6_1_1_border_window}{Border\+Window}} Inicjalizuje podstawowe komponenty 
+
+metoda rozpoczynająca najważniejsze funkcje potrzebne przy starcie okna 
+
+rozpoczęcie pracy Painta 
+
+pętla for dla wybierania startowego koloru pędzla 
+
+wybiera poczatkowy kolor jako czerwony 
+
+zapisuje kolor dla innych warstw w zmiennej Color\+Mode 
+
+ustawia atrybuty dla pędzla 
+
+szerokośc pędzla 
+
+wysokość pędzla 
+
+ustawia kształ pędzla 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a5ba4a89ba8ece37221809d0729f106d7}\label{class_r6_1_1_border_window_a5ba4a89ba8ece37221809d0729f106d7}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BrushColorCombo\_SelectionChanged@{BrushColorCombo\_SelectionChanged}}
+\index{BrushColorCombo\_SelectionChanged@{BrushColorCombo\_SelectionChanged}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BrushColorCombo\_SelectionChanged()}{BrushColorCombo\_SelectionChanged()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Brush\+Color\+Combo\+\_\+\+Selection\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Selection\+Changed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kolory pędzla 
+
+ustawia wartośc pola radio kolorów \mbox{\Hypertarget{class_r6_1_1_border_window_a9124fe60aaacd20c7c0d1ace0555a28b}\label{class_r6_1_1_border_window_a9124fe60aaacd20c7c0d1ace0555a28b}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BrushShapesCombo\_SelectionChanged@{BrushShapesCombo\_SelectionChanged}}
+\index{BrushShapesCombo\_SelectionChanged@{BrushShapesCombo\_SelectionChanged}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BrushShapesCombo\_SelectionChanged()}{BrushShapesCombo\_SelectionChanged()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Brush\+Shapes\+Combo\+\_\+\+Selection\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Selection\+Changed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kształty pędzla 
+
+\begin{DoxyReturn}{Returns}
+jeśli brak obiektu tablicy do rysowania, zwraca 
+\end{DoxyReturn}
+
+
+ustawia kształt pędzla na koło 
+
+ustawia kształt pędzla na kwadrat \mbox{\Hypertarget{class_r6_1_1_border_window_ac61bc05781f6a6d8b6167e102c43f730}\label{class_r6_1_1_border_window_ac61bc05781f6a6d8b6167e102c43f730}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BrushSizeSlider\_ValueChanged@{BrushSizeSlider\_ValueChanged}}
+\index{BrushSizeSlider\_ValueChanged@{BrushSizeSlider\_ValueChanged}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BrushSizeSlider\_ValueChanged()}{BrushSizeSlider\_ValueChanged()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Brush\+Size\+Slider\+\_\+\+Value\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Property\+Changed\+Event\+Args$<$ double $>$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przesuwak do rozmiaru pędzla 
+
+ustawia wartość slidera grubości pędzla \begin{DoxyReturn}{Returns}
+jeśli brak obiektu tablicy do rysowania, zwraca 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_ac90a822259767b24cb4510075be87c59}\label{class_r6_1_1_border_window_ac90a822259767b24cb4510075be87c59}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BrushStateCombo\_SelectionChanged@{BrushStateCombo\_SelectionChanged}}
+\index{BrushStateCombo\_SelectionChanged@{BrushStateCombo\_SelectionChanged}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BrushStateCombo\_SelectionChanged()}{BrushStateCombo\_SelectionChanged()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Brush\+State\+Combo\+\_\+\+Selection\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Selection\+Changed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zmienia pędzle 
+
+\begin{DoxyReturn}{Returns}
+jeśli brak obiektu tablicy do rysowania, zwraca 
+\end{DoxyReturn}
+
+
+ustawia pędzel na malowanie 
+
+usawia pędzel na wskaźnik 
+
+ustawia pędzel na zwykłą gumkę 
+
+ustawia pędzel na gumkę, która usuwa całą linię \mbox{\Hypertarget{class_r6_1_1_border_window_a3b311ca9574273854d443a4db07b3af3}\label{class_r6_1_1_border_window_a3b311ca9574273854d443a4db07b3af3}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Button\_Floor1\_Click@{Button\_Floor1\_Click}}
+\index{Button\_Floor1\_Click@{Button\_Floor1\_Click}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Button\_Floor1\_Click()}{Button\_Floor1\_Click()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Button\+\_\+\+Floor1\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk 1 piętra 
+
+po kliknięciu wykonuje zmianę piętra oraz inne czynnoście potrzebne do tej czynności ustawia tablice do rysowania na 1 
+
+ustawia Use na true 
+
+pokazuje 1 tablicę do rysowania 
+
+ukrywa 2 tablicę do rysowania 
+
+ukrywa 3 tablice do rysowania 
+
+pokazuje 1 piętro 
+
+ukrywa 2 piętro 
+
+ukrywa 3 piętro 
+
+wczytuje Brush\+Mode ze zmiennej 
+
+wczytuje Shape\+Mode ze zmiennej 
+
+wczytuje Size\+Mode ze zmiennej 
+
+wczytuje Color\+Mode ze zmiennej \mbox{\Hypertarget{class_r6_1_1_border_window_a6f3bb94485f373bb58049c1d7af5d13d}\label{class_r6_1_1_border_window_a6f3bb94485f373bb58049c1d7af5d13d}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Button\_Floor2\_Click@{Button\_Floor2\_Click}}
+\index{Button\_Floor2\_Click@{Button\_Floor2\_Click}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Button\_Floor2\_Click()}{Button\_Floor2\_Click()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Button\+\_\+\+Floor2\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk 2 piętra 
+
+ustawia tablice do rysowania na 2 
+
+ustawia Use na true 
+
+ukrywa 1 tablicę do rysowania 
+
+pokazuje 2 tablice do rysowania 
+
+ukrywa 3 tablice do rysowania 
+
+ukrywa 1 piętro 
+
+pokazuje 2 piętro 
+
+ukrywa 3 piętro 
+
+wczytuje Brush\+Mode ze zmiennej 
+
+wczytuje Shape\+Mode ze zmiennej 
+
+wczytuje Size\+Mode ze zmiennej 
+
+wczytuje Color\+Mode ze zmiennej \mbox{\Hypertarget{class_r6_1_1_border_window_a0a3bf7cdcdd8accd8390e38c2f78c48a}\label{class_r6_1_1_border_window_a0a3bf7cdcdd8accd8390e38c2f78c48a}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Button\_Floor3\_Click@{Button\_Floor3\_Click}}
+\index{Button\_Floor3\_Click@{Button\_Floor3\_Click}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Button\_Floor3\_Click()}{Button\_Floor3\_Click()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Button\+\_\+\+Floor3\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk 3 piętra 
+
+ustawia tablice do rysowania na 3 
+
+ustawia Use na true 
+
+ukrywa 1 tablicę do rysowania 
+
+ukrywa 2 tablice do rysowania 
+
+pokazuje 3 tablicę do rysowania 
+
+ukrywa 1 piętro 
+
+ukrywa 2 piętro 
+
+pokazuje 3 piętro 
+
+wczytuje Brush\+Mode ze zmiennej 
+
+wczytuje Shape\+Mode ze zmiennej 
+
+wczytuje Size\+Mode ze zmiennej 
+
+wczytuje Color\+Mode ze zmiennej \mbox{\Hypertarget{class_r6_1_1_border_window_a553e12d8cc547080bdf44c3c8972025a}\label{class_r6_1_1_border_window_a553e12d8cc547080bdf44c3c8972025a}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Close\_Click@{Close\_Click}}
+\index{Close\_Click@{Close\_Click}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Close\_Click()}{Close\_Click()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Close\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zamknięcie okna 
+
+przypisanie zmiennej mw obiektu \mbox{\hyperlink{class_r6_1_1_map_window}{Map\+Window}} 
+
+otwiera nowe okno 
+
+zamyka stare okno \mbox{\Hypertarget{class_r6_1_1_border_window_a359413bf0662feeeb3caa09a7226a139}\label{class_r6_1_1_border_window_a359413bf0662feeeb3caa09a7226a139}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!FloorsHidding@{FloorsHidding}}
+\index{FloorsHidding@{FloorsHidding}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{FloorsHidding()}{FloorsHidding()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Floors\+Hidding (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ukrywa podłogę 
+
+Przyjmuje ilość ścian jako x pętla ustawiająca opacity każdego obiektu na 0 
+
+ustawia tablicy obiektów oppacity = 0 \mbox{\Hypertarget{class_r6_1_1_border_window_a1591a1aa79f9d222f796e1016a5fa896}\label{class_r6_1_1_border_window_a1591a1aa79f9d222f796e1016a5fa896}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Hidding@{Hidding}}
+\index{Hidding@{Hidding}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Hidding()}{Hidding()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Hidding (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ukrywa wszystkie ściany w trakcie startu 
+
+przyjmuje numer ściany jako i warunek ukrycia = 100\% opacity 
+
+ustawia opacity na 0 jeśli prawda 
+
+ustawia tablicy wartość true jeśli prawda 
+
+ustawia opacity na 100 jeśli fałsz 
+
+ustawia tablicy wartość false jeśli fałsz \mbox{\Hypertarget{class_r6_1_1_border_window_aac448e44d41bd2ff00169c352fc54e97}\label{class_r6_1_1_border_window_aac448e44d41bd2ff00169c352fc54e97}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!ReinforceMode@{ReinforceMode}}
+\index{ReinforceMode@{ReinforceMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{ReinforceMode()}{ReinforceMode()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Reinforce\+Mode (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Routed\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ukrywa lub pokazuje tablicę do rysowania 
+
+pokazuje lub ukrywa 1 tablicę do rysowania 
+
+pokazuje lub ukrywa 2 tablice do rysowania 
+
+pokazuje lub ukrywa 3 tablicę do rysowania \mbox{\Hypertarget{class_r6_1_1_border_window_af513ea7da32c4569d81ff3bd1ac57ec7}\label{class_r6_1_1_border_window_af513ea7da32c4569d81ff3bd1ac57ec7}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!setBrushMode@{setBrushMode}}
+\index{setBrushMode@{setBrushMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{setBrushMode()}{setBrushMode()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+set\+Brush\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ustawienie pędzla 
+
+utawia typ pędzla na rysowanie 
+
+ustawia typ pędzla na wskazywanie 
+
+ustawia typ pędzla na zwykłą gumkę 
+
+ustawia typ pędzla na gumką, która usuwa cały linie \mbox{\Hypertarget{class_r6_1_1_border_window_a8b03994a86c5669bb1cd8f8b1e7f4cfc}\label{class_r6_1_1_border_window_a8b03994a86c5669bb1cd8f8b1e7f4cfc}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!setColorMode@{setColorMode}}
+\index{setColorMode@{setColorMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{setColorMode()}{setColorMode()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+set\+Color\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ustawia kolor pędzla dla innych Paintings 
+
+wczytuje dostępne kolory do colors 
+
+pętla ustawiająca kolor pędzla 
+
+przypisanie koloru obiektowi \mbox{\Hypertarget{class_r6_1_1_border_window_aa08320545cc38a532d0aad8ed405089d}\label{class_r6_1_1_border_window_aa08320545cc38a532d0aad8ed405089d}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!setShapeMode@{setShapeMode}}
+\index{setShapeMode@{setShapeMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{setShapeMode()}{setShapeMode()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+set\+Shape\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ustawianie kształt pędzla 
+
+ustawia kształt pędzla na koło 
+
+ustawia kształ pędzla na kwadrat \mbox{\Hypertarget{class_r6_1_1_border_window_af993f71d154c141cd4b686ca4e85a1d6}\label{class_r6_1_1_border_window_af993f71d154c141cd4b686ca4e85a1d6}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!setSizeMode@{setSizeMode}}
+\index{setSizeMode@{setSizeMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{setSizeMode()}{setSizeMode()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+set\+Size\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+zmienna zapisująca wielkość pędzla 
+
+Ustawia painta 
+
+ustawia wielkość pędzla \mbox{\Hypertarget{class_r6_1_1_border_window_a877d358b0f63cb293a1ea410865d83b5}\label{class_r6_1_1_border_window_a877d358b0f63cb293a1ea410865d83b5}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Start@{Start}}
+\index{Start@{Start}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+czynności potrzebne do wystartowania okna 
+
+ustawienie Paintboard1 do użytku 
+
+przypisanie Paint\+Board1 do tablicy Paintings (zablokowanie zbędnego pola) 
+
+przypisanie Paint\+Board1 do tablicy Paintings 
+
+przypisanie Paint\+Board2 do tablicy Paintings 
+
+przypisanie Paint\+Board3 do tablicy Paintings 
+
+ustawienie Paint\+Board1 jako widoczne 
+
+schowanie Paintboard2 
+
+schowanie Paintboard3 
+
+ustawienie pierwszego piętra jako widoczne 
+
+ukrycie 2 piętra 
+
+ukrycie 3 piętra 
+
+ukrycie Reinforceów, aby mogły być one użyte wygodnie dla użytkownika 
+
+ukrycie Reinforceów, aby mogły być one użyte wygodnie dla użytkownika 
+
+metoda Wall\+List, która przypisuje obiekry grid o nazwie Wall do tablicy obiektów 
+
+ukrycie Reinforceów, aby mogły być one użyte wygodnie dla użytkownika \mbox{\Hypertarget{class_r6_1_1_border_window_a0fe611ab2eca4d594bd706026a7f48c2}\label{class_r6_1_1_border_window_a0fe611ab2eca4d594bd706026a7f48c2}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Wall1\_MouseLeftButtonDown@{Wall1\_MouseLeftButtonDown}}
+\index{Wall1\_MouseLeftButtonDown@{Wall1\_MouseLeftButtonDown}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Wall1\_MouseLeftButtonDown()}{Wall1\_MouseLeftButtonDown()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Wall1\+\_\+\+Mouse\+Left\+Button\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Mouse\+Button\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czynności ścian 
+
+zdarzenie dla ściany 1 wywołanie metody ukrycia ściany \mbox{\Hypertarget{class_r6_1_1_border_window_a9c3e58b6cbed9a315c21c96b90ba1afc}\label{class_r6_1_1_border_window_a9c3e58b6cbed9a315c21c96b90ba1afc}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!WallList@{WallList}}
+\index{WallList@{WallList}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{WallList()}{WallList()}}
+{\footnotesize\ttfamily void R6.\+Border\+Window.\+Wall\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista ścian 
+
+Każdemu polu tablicy przypisuje ścianę odpowiadającą numerowi tablicy /remarks$>$ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a3d4d51e8a9d4bba1d66d152127718b55}\label{class_r6_1_1_border_window_a3d4d51e8a9d4bba1d66d152127718b55}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Floor1@{Floor1}}
+\index{Floor1@{Floor1}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Floor1}{Floor1}}
+{\footnotesize\ttfamily bool \mbox{[}$\,$\mbox{]} R6.\+Border\+Window.\+Floor1 = new bool\mbox{[}\mbox{\hyperlink{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}{wf1}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Typ Logiczny piętra 1 
+
+\mbox{\Hypertarget{class_r6_1_1_border_window_a08f590f0e50727c447b137e55454e9d8}\label{class_r6_1_1_border_window_a08f590f0e50727c447b137e55454e9d8}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Floor2@{Floor2}}
+\index{Floor2@{Floor2}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Floor2}{Floor2}}
+{\footnotesize\ttfamily bool \mbox{[}$\,$\mbox{]} R6.\+Border\+Window.\+Floor2 = new bool\mbox{[}35\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Typ logiczny piętra 2 
+
+\mbox{\Hypertarget{class_r6_1_1_border_window_aed1eaf9832ca05835a3a3375fcfd46c0}\label{class_r6_1_1_border_window_aed1eaf9832ca05835a3a3375fcfd46c0}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Paintings@{Paintings}}
+\index{Paintings@{Paintings}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Paintings}{Paintings}}
+{\footnotesize\ttfamily Ink\+Canvas \mbox{[}$\,$\mbox{]} R6.\+Border\+Window.\+Paintings = new Ink\+Canvas\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica tablic do rysowania 
+
+\mbox{\Hypertarget{class_r6_1_1_border_window_ab935e3b07814c16d3bda8739d094242b}\label{class_r6_1_1_border_window_ab935e3b07814c16d3bda8739d094242b}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!WallsFloor@{WallsFloor}}
+\index{WallsFloor@{WallsFloor}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{WallsFloor}{WallsFloor}}
+{\footnotesize\ttfamily Grid \mbox{[}$\,$\mbox{]} R6.\+Border\+Window.\+Walls\+Floor = new Grid\mbox{[}\mbox{\hyperlink{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}{wf1}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica ścian 
+
+\mbox{\Hypertarget{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}\label{class_r6_1_1_border_window_a516c0f0a2b98623da65e1bb69f4629a9}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!wf1@{wf1}}
+\index{wf1@{wf1}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{wf1}{wf1}}
+{\footnotesize\ttfamily const int R6.\+Border\+Window.\+wf1 = 70\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stała zmienna która przechowuje liczbe bool w tablicy 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r6_1_1_border_window_abf05a9cb8322f14a0f769d90232223ff}\label{class_r6_1_1_border_window_abf05a9cb8322f14a0f769d90232223ff}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!BrushMode@{BrushMode}}
+\index{BrushMode@{BrushMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{BrushMode}{BrushMode}}
+{\footnotesize\ttfamily int R6.\+Border\+Window.\+Brush\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Pędzel 
+
+/// 
+
+przyjmuje tryb pędzla 
+
+\begin{DoxyReturn}{Returns}
+zwraca tryb pędzla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_affd1225ea88517c68b765f71cbf5f58c}\label{class_r6_1_1_border_window_affd1225ea88517c68b765f71cbf5f58c}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!ColorMode@{ColorMode}}
+\index{ColorMode@{ColorMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{ColorMode}{ColorMode}}
+{\footnotesize\ttfamily int R6.\+Border\+Window.\+Color\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Globalna zmienna Color\+Mode 
+
+przyjmuje kolor pędzla 
+
+\begin{DoxyReturn}{Returns}
+zwraca kolor pędzla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a67c1b3f2b97016169c2c6f44944886e3}\label{class_r6_1_1_border_window_a67c1b3f2b97016169c2c6f44944886e3}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!P@{P}}
+\index{P@{P}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily int R6.\+Border\+Window.\+P\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Zmienna globalna P 
+
+przyjmuje numer tablicy do rysowania 
+
+\begin{DoxyReturn}{Returns}
+zwraca numer tablicy do rysowania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a975d53917e4349a57833760f5b06aca1}\label{class_r6_1_1_border_window_a975d53917e4349a57833760f5b06aca1}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!ShapeMode@{ShapeMode}}
+\index{ShapeMode@{ShapeMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{ShapeMode}{ShapeMode}}
+{\footnotesize\ttfamily int R6.\+Border\+Window.\+Shape\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Kształty pędzla 
+
+przyjmuje kształ pędzla 
+
+\begin{DoxyReturn}{Returns}
+zwraca kształt pędzla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a4f1a4e5f68aa130734eda8cc1cd58610}\label{class_r6_1_1_border_window_a4f1a4e5f68aa130734eda8cc1cd58610}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!SizeMode@{SizeMode}}
+\index{SizeMode@{SizeMode}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{SizeMode}{SizeMode}}
+{\footnotesize\ttfamily double R6.\+Border\+Window.\+Size\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [private]}}
+
+
+
+Paint 
+
+przyjmuje wielkość pędzla 
+
+\begin{DoxyReturn}{Returns}
+zwraca wielkość pędzla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r6_1_1_border_window_a9b7f2a1fddfc5036c4f02413ad76533d}\label{class_r6_1_1_border_window_a9b7f2a1fddfc5036c4f02413ad76533d}} 
+\index{R6.BorderWindow@{R6.BorderWindow}!Use@{Use}}
+\index{Use@{Use}!R6.BorderWindow@{R6.BorderWindow}}
+\subsubsection{\texorpdfstring{Use}{Use}}
+{\footnotesize\ttfamily bool R6.\+Border\+Window.\+Use\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Typ logiczny Use 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/mati\+\_\+/\+Desktop/\+R6 Paint V2 ostatnia wersja/\+R6 komentarze zrobione tak jak ma niby być/\+R6 komentarze zrobione tak jak ma niby być/\+R6 Paint V2 — kopia/\+R6/Border\+Window.\+xaml.\+cs\end{DoxyCompactItemize}
