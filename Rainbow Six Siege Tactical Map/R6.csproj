@@ -83,18 +83,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BorderPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="BorderPage2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="BorderPage3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="BorderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,15 +94,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="BorderPage.xaml.cs">
-      <DependentUpon>BorderPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="BorderPage2.xaml.cs">
-      <DependentUpon>BorderPage2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="BorderPage3.xaml.cs">
-      <DependentUpon>BorderPage3.xaml</DependentUpon>
     </Compile>
     <Compile Include="BorderWindow.xaml.cs">
       <DependentUpon>BorderWindow.xaml</DependentUpon>

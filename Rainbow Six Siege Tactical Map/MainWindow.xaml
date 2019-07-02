@@ -12,7 +12,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="background-image.jpg"/>
         </Grid.Background>
-        <Image x:Name="Map_Button" HorizontalAlignment="Center" Height="178" Margin="727,464,772,430" VerticalAlignment="Center" Width="413" Source="MapButton.jpg" MouseLeftButtonDown="Map_Button_MouseLeftButtonDown"/>
+        <Image x:Name="Map_Button" HorizontalAlignment="Center" Height="178" VerticalAlignment="Center" Width="413" Source="MapButton.jpg" MouseLeftButtonDown="Map_Button_MouseLeftButtonDown"/>
         <Button Content="X" HorizontalAlignment="Left" Height="100" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100" Click="Button_Click"/>
     </Grid>
 </Window>

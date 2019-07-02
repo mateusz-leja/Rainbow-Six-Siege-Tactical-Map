@@ -12,7 +12,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="background-image.jpg"/>
         </Grid.Background>
-        <Image Source="BorderButton.jpg" MouseLeftButtonDown="Image_MouseLeftButtonDown"  HorizontalAlignment="Center" Height="178" Margin="769,471,853,423" VerticalAlignment="Center" Width="290"/>
+        <Image Source="BorderButton.jpg" MouseLeftButtonDown="Image_MouseLeftButtonDown"  HorizontalAlignment="Center" Height="178" VerticalAlignment="Center" Width="290"/>
         <Button Content="X" HorizontalAlignment="Left" Height="100" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="100" Click="Button_Click"/>
     </Grid>
 </Window>

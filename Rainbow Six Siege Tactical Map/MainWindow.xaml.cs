@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,23 +24,29 @@ namespace R6
      /// </summary>
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); /// <remarks> inicjalizuje potrzebne komponenty </remarks>
         }
+
+
         /// <summary>
         /// Przechodzi do wyboru map
         /// </summary>
         private void Map_Button_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MapWindow mw = new MapWindow();
-            mw.ShowDialog();
-            this.Close();
+            MapWindow mw = new MapWindow(); /// <remarks> przypisuje zmiennej mw obiekt MapWindow </remarks>
+            mw.ShowDialog(); /// <remarks> otwiera okno </remarks>
+            this.Close(); /// <remarks> zamyka okno </remarks>
         }
+
+
         /// <summary>
         /// Kliknięcie przycisku
         /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            this.Close(); /// <remarks> zamyka okno </remarks>
         }
+
+
     }
 }
